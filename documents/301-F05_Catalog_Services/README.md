@@ -1,7 +1,7 @@
-GeoNetwork_GeoServer setup - basic
+GeoNetwork / GeoServer setup - basic
 ===================================
 
-Terry Curran.
+owner: Terry Curran
 
 - 301 Geospatial Implementation
 - [301-01 Installing GeoNetwork/GeoServer](documents/301-01_Installing_GeoNetwork_GeoServer.md "Installing GeoNetwork/GeoServer")
