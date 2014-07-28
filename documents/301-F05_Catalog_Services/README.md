@@ -4,7 +4,7 @@ GeoNetwork / GeoServer setup - basic
 owner: Terry Curran
 
 - 301 Geospatial Implementation
-- [301-01 Installing GeoNetwork/GeoServer](documents/301-01_Installing_GeoNetwork_GeoServer.md "Installing GeoNetwork/GeoServer")
+- [301-01 Installing GeoNetwork/GeoServer](301-01_Installing_GeoNetwork_GeoServer.md "Installing GeoNetwork/GeoServer")
 - 301-02 Installing ESRI GeoPortal Server
 - 301-03 GeoServer Update
 - 301-04 Installing ArcGIS Server
