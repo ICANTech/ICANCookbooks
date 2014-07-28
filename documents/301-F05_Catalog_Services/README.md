@@ -1,7 +1,7 @@
-ICANCookbooks
-=============
+GeoNetwork_GeoServer setup - basic
+===================================
 
-Experimental use of GitHub to manage content for ICAN Cookbooks project.
+Terry Curran.
 
 - 301 Geospatial Implementation
 - [301-01 Installing GeoNetwork/GeoServer](documents/301-01_Installing_GeoNetwork_GeoServer.md "Installing GeoNetwork/GeoServer")
