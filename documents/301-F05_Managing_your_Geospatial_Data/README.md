@@ -4,7 +4,7 @@ Managing your Geospatial Data
 owner: Terry Curran
 
 301 Geospatial Implementation
-
+===
 - 301-01 Installing a Linux Server
 - 301-02 PostgreSQL PostGIS Installation
 - [301-04 GeoNetwork GeoServer Setup Basics] (301-04_GeoNetwork_GeoServer__setup_-_basic.md  "301-04 GeoNetwork_GeoServer Setup Basics")
@@ -24,7 +24,7 @@ owner: Terry Curran
 - 301-F09 Basic vi Commands
 
 305 Geospatial Content
-
+===
 - 305-01 GeoNetwork GeoServer start-stop process
 - 305-02 Access and Use the GeoNetwork metadata server
 - 305-03 Load metadata into GeoNetwork
