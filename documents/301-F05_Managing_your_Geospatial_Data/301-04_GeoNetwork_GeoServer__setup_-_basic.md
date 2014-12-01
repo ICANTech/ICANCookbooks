@@ -46,10 +46,10 @@ Do *not* move the GeoServer data directory until instructed in a subsequent proc
 
 
 Created by:
-===========
+===
 Terry Curran
 
 Approved by process owner / date:
-=================================
+===
 Terry Curran, P.Eng. / 2014-11-30
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
