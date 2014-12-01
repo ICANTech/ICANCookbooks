@@ -5,6 +5,6 @@ Experimental use of GitHub to manage content for ICAN Cookbooks project. There a
 
 - Understanding Metadata
 - [Understanding Semantics](documents/201-F05_Understanding_Semantics/README.md "Understanding Semantics")
-- [Catalog Services for the Web](documents/301-F05_Catalog_Services/README.md "Catalog Services for the Web")
+- [Managing your Geospatial Data](documents/301-F05_Managing_your_Geospatial_Data "Managing your Geospatial Data")
 - Connecting your Atlas
 - Yet another cookbook
