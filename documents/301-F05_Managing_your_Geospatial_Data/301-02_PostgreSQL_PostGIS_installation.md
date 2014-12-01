@@ -12,7 +12,6 @@ At the conclusion of the PostgreSQL/ PostGIS installation, the application will 
 |---------|-------------------------------------------------------|--------------
 | 1	      |
 | 2       |
-|					|
 | 3       |
 |					|* PGDATA - path to data directory  										|e.g.  PGDATA=/opt/PostgreSQL/data and export PATH
 |					|* PGUSER - default user (role) 												|e.g.   PGUSER=geonetwork
