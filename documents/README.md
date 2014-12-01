@@ -10,8 +10,6 @@ owner: Terry Curran
 - [301-05 GeoServer version updating or stand-alone installation] (301-F05_Managing_your_Geospatial_Data/301-05_GeoServer_updating_or_stand-alone.md "301-05 GeoServer version updating or stand-alone installation")
 - 301-06 Installing ESRI GeoPortal Server
 - 301-07 Installing ArcGIS Server
-
- 
 - 301-F01 Geospatial Data Management Concepts
 - 301-F02 Semantics for geospatial knowledge management
 - 301-F03 Understanding Metadata
@@ -35,7 +33,6 @@ owner: Terry Curran
 - 305-09 Loading CSV data into PostGIS
 - 305-10 Styling a GeoServer Layer
 - 305-11 Creating a controlled Keyword Thesaurus
-
 - 305-F01 Connecting Your Atlas
 - 305-F03 Styling GeoServer layers with cascading stylesheets
 - 305-F05 MEF2 generator application
