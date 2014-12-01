@@ -1,6 +1,5 @@
 Managing your Geospatial Data
-===================================
-
+===
 owner: Terry Curran
 
 301 Geospatial Server Implementation
