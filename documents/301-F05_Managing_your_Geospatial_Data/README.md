@@ -7,7 +7,7 @@ owner: Terry Curran
 
 - 301-01 Installing a Linux Server
 - 301-02 PostgreSQL PostGIS Installation
-- 301-04 GeoNetwork GeoServer setup - basic
+- [301-04_GeoNetwork_GeoServer__setup_-_basic.md] (301-04_GeoNetwork_GeoServer__setup_-_basic.md "301-04 GeoNetwork GeoServer setup - basic")
 - [301-01 Installing GeoNetwork/GeoServer](301-01_Installing_GeoNetwork_GeoServer.md "Installing GeoNetwork/GeoServer")
 - 301-05 GeoServer version updating or stand-alone installation
 
