@@ -9,27 +9,16 @@ To install on a suitable server the PostgreSQL database with the PostGIS spatial
 At the conclusion of the PostgreSQL/ PostGIS installation, the application will be installed as a service and be running whenever the computer and operating system is active.  That is, no need to start the application, ever.
 
 |**Step** |**Details**	                                          |**Reference** 
-
 |---------|-------------------------------------------------------|--------------
-
 | 1	      |
-
 | 2       |
-
 |					|
-
 |					|
-
 | 3       |
-
 |					|
-
 |					|* PGDATA - path to data directory  										|e.g.  PGDATA=/opt/PostgreSQL/data and export PATH
-
 |					|* PGUSER - default user (role) 												|e.g.   PGUSER=geonetwork
-
 |					|* PGPORT   listen port 																|e.g.  PGPORT=5432
-
 | 4       |In psql,   																						|* superuser postgres owns the functions
 
 |					| * CREATE USER geonetwork WITH PASSWORD  secret ; 			|* owner geonetwork will own the metadata database.  It is best to separate the two users for security reasons
