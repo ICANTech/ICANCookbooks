@@ -5,10 +5,10 @@ owner: Terry Curran
 
 301 Geospatial Server Implementation
 ==
-- [301-01 Installing a Linux Server] (301-01 Geospatial Implementation -Linux installation.md "301-01 Installing a Linux Server")
-- [301-02 PostgreSQL PostGIS Installation] (301-02_PostgreSQL_PostGIS_installation.md "301-02 PostgreSQL PostGIS Installation")
-- [301-04 GeoNetwork GeoServer Setup Basics] (301-04_GeoNetwork_GeoServer__setup_-_basic.md  "301-04 GeoNetwork_GeoServer Setup Basics")
-- [301-05 GeoServer version updating or stand-alone installation] (301-05_GeoServer_updating_or_stand-alone.md "301-05 GeoServer version updating or stand-alone installation")
+- [301-01 Installing a Linux Server] (301-F05_Managing_your_Geospatial_Data/301-01 Geospatial Implementation -Linux installation.md "301-01 Installing a Linux Server")
+- [301-02 PostgreSQL PostGIS Installation] (301-F05_Managing_your_Geospatial_Data/301-02_PostgreSQL_PostGIS_installation.md "301-02 PostgreSQL PostGIS Installation")
+- [301-04 GeoNetwork GeoServer Setup Basics] (301-F05_Managing_your_Geospatial_Data/301-04_GeoNetwork_GeoServer__setup_-_basic.md  "301-04 GeoNetwork_GeoServer Setup Basics")
+- [301-05 GeoServer version updating or stand-alone installation] (301-F05_Managing_your_Geospatial_Data/301-05_GeoServer_updating_or_stand-alone.md "301-05 GeoServer version updating or stand-alone installation")
 - 301-06 Installing ESRI GeoPortal Server
 - 301-07 Installing ArcGIS Server
 
