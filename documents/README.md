@@ -4,34 +4,34 @@ owner: Terry Curran
 
 ### 301 Geospatial Server Implementation
 301 Geospatial System Implementation - Open Source
-- [301-01 Installing a Linux Server] (301-F05_Managing_your_Geospatial_Data/301-01 Geospatial Implementation -Linux installation.md "301-01 Installing a Linux Server")
-- [301-02 PostgreSQL PostGIS Installation] (301-F05_Managing_your_Geospatial_Data/301-02_PostgreSQL_PostGIS_installation.md "301-02 PostgreSQL PostGIS Installation")
-- [301-04 GeoNetwork GeoServer Setup Basics] (301-F05_Managing_your_Geospatial_Data/301-04_GeoNetwork_GeoServer__setup_-_basic.md  "301-04 GeoNetwork_GeoServer Setup Basics")
-- [301-05 GeoServer version updating or stand-alone installation] (301-F05_Managing_your_Geospatial_Data/301-05_GeoServer_updating_or_stand-alone.md "301-05 GeoServer version updating or stand-alone installation")
-- 301-06 Installing ESRI GeoPortal Server
-- 301-07 Installing ArcGIS Server
-- 301-F01 Geospatial Data Management Concepts
-- 301-F02 Semantics for geospatial knowledge management
-- 301-F03 Understanding Metadata
-- 301-F04 Catalog Service for the Web (CSW)
-- 301-F05 Common Metadata Editing Tools
-- 301-F06 Listing of CSWs 
-- 301-F07 Knowledge Organization Systems
-- 301-F08 Commonly used Linux terminal commands
-- 301-F09 Basic vi Commands
+- [301-01 Installing a Linux Server] (301 Geospatial Server Implementation/301-01 Geospatial Implementation -Linux installation.md "301-01 Installing a Linux Server")
+- [301-02 PostgreSQL PostGIS Installation] (301 Geospatial Server Implementation/301-02_PostgreSQL_PostGIS_installation.md "301-02 PostgreSQL PostGIS Installation")
+- [301-04 GeoNetwork GeoServer Setup Basics] (301 Geospatial Server Implementation/301-04_GeoNetwork_GeoServer__setup_-_basic.md  "301-04 GeoNetwork_GeoServer Setup Basics")
+- [301-05 GeoServer version updating or stand-alone installation] (301 Geospatial Server Implementation/301-05_GeoServer_updating_or_stand-alone.md "301-05 GeoServer version updating or stand-alone installation")
+- [301-06 Stopping GeoNetwork in Linux] (301 Geospatial Server Implementation/301-06 Stopping GeoNetwork in Linux.md "301-06 Stopping GeoNetwork in Linux")
+- [301-07 Access and Use the GeoNetwork metadata server] (301 Geospatial Server Implementation/301-07 Access and Use the GeoNetwork metadata server.md "301-07 Access and Use the GeoNetwork metadata server")
+- [301-08 Connecting your Atlas to ICAN] (301 Geospatial Server Implementation/301-08 Connecting your Atlas to ICAN.md "301-08 Connecting your Atlas to ICAN")
+- [301-F01 What is a Geospatial Knowledge Organization System] (301 Geospatial Server Implementation/What is a Geospatial Knowledge Organization System.md "What is a Geospatial Knowledge Organization System")
+- [301-F02 Understanding Metadata] (301 Geospatial Server Implementation/301-F02 Understanding Metadata.md "301-F02 Understanding Metadata")
+- [301-F03 Catalog Service for the Web (CSW)] (301 Geospatial Server Implementation/)
+- [301-F06 Listing of CSWs ] (301 Geospatial Server Implementation/)
+- [301-F08 Commonly used Linux terminal commands] (301 Geospatial Server Implementation/)
+- [301-F09 Basic vi Commands] (301 Geospatial Server Implementation/)
 
-### 305 Geospatial Content
-- 305-01 GeoNetwork GeoServer start-stop process
-- 305-02 Access and Use the GeoNetwork metadata server
-- 305-03 Load metadata into GeoNetwork
-- 305-04 Connecting your Atlas to ICAN
-- 305-05 Add thumbnails to metadata in GeoNetwork
-- 305-06 Create hyperlinks to data and websites
-- 305-07 Creating thumbnails in a batch process
-- 305-08 Creating a MEF
-- 305-09 Loading CSV data into PostGIS
-- 305-10 Styling a GeoServer Layer
-- 305-11 Creating a controlled Keyword Thesaurus
-- 305-F01 Connecting Your Atlas
-- 305-F03 Styling GeoServer layers with cascading stylesheets
-- 305-F05 MEF2 generator application
+### 305 Creating Geospatial Content
+- [305-01 Create data thumbnails for GeoNetwork] (305 Creating Geospatial Content/)
+- [305-02 Create metadata within GeoNetwork] (305 Creating Geospatial Content/)
+- [305-03 Create metadata outside GeoNetwork] (305 Creating Geospatial Content/)
+- [305-04 Loading CSV data into PostGIS] (305 Creating Geospatial Content/)
+- [305-05 Creating and Styling a GeoServer Layer] (305 Creating Geospatial Content/)
+- [305-06 Load metadata packages into GeoNetwork] (305 Creating Geospatial Content/)
+- [305-F01 Common metadata editing tools] (305 Creating Geospatial Content/)
+- [305-F02 Metadata keyword considerations] (305 Creating Geospatial Content/)
+
+### 307 Creating metadata with batch processes
+- [307-01 Adding thumbnail links to metadata] (307 Creating metadata with batch processes/)
+- [307-02 Adding data links to metadata] (307 Creating metadata with batch processes/)
+- [307-03 Creating MEF Package for GeoNetwork] (307 Creating metadata with batch processes/)
+- [307-F01 Sample XSLT to add graphics links] (307 Creating metadata with batch processes/)
+- [307-F02 Sample XSLT to add transfer option links] (307 Creating metadata with batch processes/)
+- [307-F03 Sample MEF2 generator application] (307 Creating metadata with batch processes/)
