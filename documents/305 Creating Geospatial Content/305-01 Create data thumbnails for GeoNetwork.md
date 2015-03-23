@@ -15,8 +15,7 @@ ImageMagick has huge image manipulation capability; this process just describes 
 |          |       * Click "View"ù, then "Resize"ù                     | Generally use                                 |
 |          |       * Enter desired size result                       |   * 800 x 800 pixels for large thumbnail      |
 |          |                                                         |   * 180 x 180 pixels for small thumbnail      |
-|     4    | Save:                                                   
-                                                                     
+|     4    | Save:                                                   |                                               |
 |          |       * Click "file"ù, then "save as.."ù                  |  * Place the results in the desired folder - usually "thumbnails" |        
 |          |       * Choose appropriate filename with desired extension       |                                                          |
 |          |                                                         |  * The large thumbnail image should be the same filename as the metadata name, with the desired extension (e.g. ".png")  |
