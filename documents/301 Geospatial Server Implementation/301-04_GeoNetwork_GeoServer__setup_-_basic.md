@@ -8,7 +8,7 @@ To install GeoNetwork metadata application and the GeoServer data application on
 Do *not* move the GeoServer data directory until instructed in a subsequent process.
 
 
-|**Step** |**Details**	                                          |**Reference** 
+| **Step** | **Major Activity**                                              | **References, Forms and Details** 
 |---------|-------------------------------------------------------|--------------
 | 1	      |Go to the GeoNetwork download location (SourceForge) and download the appropriate version for the operating system.|Use the *.exe version for Windows, because this creates the start icons at the end of the process.  The 32-bit java version is required during this installation (only).  To install, simply double-click the file.
 | 2       |Install the application, selecting GN and GS.  Do not install the Inspire option, nor GAST|Installation directory should not be in Program Files.  Often, C:\ is chosen.  It is normal to get “malformed url …” when the metadata templates are loaded.  They still load and work fine.

@@ -8,7 +8,7 @@ To install on a suitable server the PostgreSQL database with the PostGIS spatial
 
 At the conclusion of the PostgreSQL/ PostGIS installation, the application will be installed as a service and be running whenever the computer and operating system is active.  That is, no need to start the application, ever.
 
-|**Step** |**Details**	                                          |**Reference** 
+| **Step** | **Major Activity**                                              | **References, Forms and Details** 
 |---------|-------------------------------------------------------|--------------
 | 1	      |
 | 2       |

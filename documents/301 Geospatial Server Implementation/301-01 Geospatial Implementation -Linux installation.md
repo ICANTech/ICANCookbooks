@@ -6,7 +6,7 @@
 
 To install and configure suitable server software for use with a geospatial software system.  Linux Mint 17 will be used as the example.
 
-|**Step** |**Details**	                                         |**Reference**             |
+| **Step** | **Major Activity**                                              | **References, Forms and Details**             |
 |---------|------------------------------------------------------|--------------------------|
 | 1	      |Download Linux Mint:                                  |* the flavour of Linux Mint is a free choice.  Linux Mint 17 was used                          |
 |	      |  * Download an ISO image from http://www.linuxmint.com |* the 64-bit version is often preferred, because it has a large address space                          |
