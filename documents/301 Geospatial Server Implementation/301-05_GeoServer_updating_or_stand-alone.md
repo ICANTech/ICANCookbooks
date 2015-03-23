@@ -8,7 +8,7 @@ To install the most recent GeoServer data application, or to update the included
 
 Note: for the GeoServer updating, it is essential that an initial execution of the GeoNetwork system have already occurred, because finalization of the GeoServer data directory contents is completed at that time.
 
-|**Step** |**Details**	                                                     |**Reference** 
+| **Step** | **Major Activity**                                              | **References, Forms and Details** 
 |---------|-------------------------------------------------------------------|--------------
 | 1	    	|Move the GEOSERVER DATA DIRECTORY to a location outside of the GeoNetwork installation folder, as desired | The basic installation contains the world map raster and three coastlines in shp format.  A typical location is on the root of the geonetwork installation.  Do not use the Program Files directory.
 |					| * Shut down Jetty ( stop server ).  This is located in the <bin> folder of the install directory.  Use the *.bat version for Windows, and *.sh for Linux.
