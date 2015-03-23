@@ -1,5 +1,5 @@
-Understanding Semantics
-=======================
+Using Semantic Web Knowledge Organisation Systems in your Geospatial Data
+=========================================================================
 
 - [Discovering Existing Semantic Resources](201-01_DiscoveringExistingSemanticResources.md "Discovering Existing Semantic Resources")
 - [Defining the Content of a Knowledge Organisation System](201-02_DefiningTheContentOfAKnowledgeOrganisationSystem.md "Defining The Content of a Knowledge Organisation System")
