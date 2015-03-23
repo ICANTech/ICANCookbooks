@@ -9,4 +9,4 @@ To stop a GeoNetwork application running on Linux when something goes wrong.
 | **2**    | Note IDs of process(es) to stop |                                                         |
 | **3**    | kill -9 \<processid\>           |                                                         |
 | **4**    | check again with:               |                                                         |
-|          |  <code>ps -ef &#124 grep java</code>         |                                                         |
+|          |  ps -ef <code>&#124</code> grep java         |                                                         |
