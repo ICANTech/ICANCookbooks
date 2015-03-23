@@ -31,9 +31,9 @@ owner: Terry Curran
 - [305-F02 Metadata keyword considerations] (305 Creating Geospatial Content/305-F02 Metadata keyword considerations.md "305-F02 Metadata keyword considerations")
 
 ### 307 Creating metadata with batch processes
-- [307-01 Adding thumbnail links to metadata] (307 Creating metadata with batch processes/307-01 Adding thumbnail links to metadata.md "307-01 Adding thumbnail links to metadata")
-- [307-02 Adding data links to metadata] (307 Creating metadata with batch processes/307-02 Adding data links to metadata.md "307-02 Adding data links to metadata")
-- [307-03 Creating MEF Package for GeoNetwork] (307 Creating metadata with batch processes/307-03 Create MEF package for GeoNetwork.md "307-03 Create MEF package for GeoNetwork")
-- [307-F01 Sample XSLT to add graphics links] (307 Creating metadata with batch processes/307-F01 Sample XSLT to add graphics links.xsl "307-F01 Sample XSLT to add graphics links")
-- [307-F02 Sample XSLT to add transfer option links] (307 Creating metadata with batch processes/307-F02 Sample XSLT to add transfer option links.xsl "307-F02 Sample XSLT to add transfer option links")
-- [307-F03 Sample MEF2 generator application] (307 Creating metadata with batch processes/307-F03 Sample MEF2 generator application.md "307-F03 Sample MEF2 generator application")
+- [307-01 Adding thumbnail links to metadata] (307 Creating Metadata with Batch Processes/307-01 Adding thumbnail links to metadata.md "307-01 Adding thumbnail links to metadata")
+- [307-02 Adding data links to metadata] (307 Creating Metadata with Batch Processes/307-02 Adding data links to metadata.md "307-02 Adding data links to metadata")
+- [307-03 Creating MEF Package for GeoNetwork] (307 Creating Metadata with Batch Processes/307-03 Create MEF package for GeoNetwork.md "307-03 Create MEF package for GeoNetwork")
+- [307-F01 Sample XSLT to add graphics links] (307 Creating Metadata with Batch Processes/307-F01 Sample XSLT to add graphics links.xsl "307-F01 Sample XSLT to add graphics links")
+- [307-F02 Sample XSLT to add transfer option links] (307 Creating Metadata with Batch Processes/307-F02 Sample XSLT to add transfer option links.xsl "307-F02 Sample XSLT to add transfer option links")
+- [307-F03 Sample MEF2 generator application] (307 Creating Metadata with Batch Processes/307-F03 Sample MEF2 generator application.md "307-F03 Sample MEF2 generator application")
