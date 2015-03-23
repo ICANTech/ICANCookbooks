@@ -11,10 +11,10 @@ owner: Terry Curran
 - [301-06 Stopping GeoNetwork in Linux] (301 Geospatial Server Implementation/301-06 Stopping GeoNetwork in Linux.md "301-06 Stopping GeoNetwork in Linux")
 - [301-07 Access and Use the GeoNetwork metadata server] (301 Geospatial Server Implementation/301-07 Access and Use the GeoNetwork metadata server.md "301-07 Access and Use the GeoNetwork metadata server")
 - [301-08 Connecting your Atlas to ICAN] (301 Geospatial Server Implementation/301-08 Connecting Your Atlas to ICAN.md "301-08 Connecting your Atlas to ICAN")
-- [301-F01 What is a geospatial knowledge organization system] (301 Geospatial Server Implementation/301-F01 What is a geospatial knowledge organization system.pdf "301-F01 What is a geospatial knowledge organization system")
-- [301-F02 Understanding Metadata] (301 Geospatial Server Implementation/301-F02 Understanding Metadata.pdf "301-F02 Understanding Metadata")
-- [301-F03 Catalog Service for the Web (CSW)] (301 Geospatial Server Implementation/301-F03 Catalog Service for the Web.pdf "301-F03 Catalog Service for the Web (CSW)")
-- [301-F04 Connecting your atlas to ICAN] (301 Geospatial Server Implementation/301-F04 Connecting your atlas to ICAN.pdf "301-F04 Connecting your atlas to ICAN")
+- [301-F01 What is a geospatial knowledge organization system] (301 Geospatial Server Implementation/301-F01 What is a geospatial knowledge organization system.pdf "301-F01 What is a geospatial knowledge organization system") * NETMAR PDF
+- [301-F02 Understanding Metadata] (301 Geospatial Server Implementation/301-F02 Understanding Metadata.pdf "301-F02 Understanding Metadata") * NETMAR PDF
+- [301-F03 Catalog Service for the Web (CSW)] (301 Geospatial Server Implementation/301-F03 Catalog Service for the Web.pdf "301-F03 Catalog Service for the Web (CSW)") * NETMAR PDF
+- [301-F04 Connecting your atlas to ICAN] (301 Geospatial Server Implementation/301-F04 Connecting your atlas to ICAN.pdf "301-F04 Connecting your atlas to ICAN") * NETMAR PDF
 - [301-F05 Listing of some Knowledge Organization Systems]  (301 Geospatial Server Implementation/301-F05 Listing of some Knowledge Organization Systems.md "301-F05 Listing of some Knowledge Organization Systems")
 - [301-F06 Listing of common CSWs ] (301 Geospatial Server Implementation/301-F06 Listing of common CSWs.md "301-F06 Listing of common CSWs")
 - [301-F08 Commonly used Linux terminal commands] (301 Geospatial Server Implementation/301-F08 Commonly used Linux terminal commands.md "301-F08 Commonly used Linux terminal commands")
