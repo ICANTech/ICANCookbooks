@@ -36,7 +36,7 @@ Drive E:-- all\_metadata\_work
 |          |                                            | * Metadata names need to have a \<unique\_name\>.xml       |
 |          |                                            | *  Input folder is usually named “metadata”                |
 |          |                                            |                                                            |
-|   3      | Point at the XSLT to add the graphics links  | * Sample Graphics Xslt is in 305-F02                     |
+|   3      | Point at the XSLT to add the graphics links  | * Sample Graphics Xslt is in 307-F01                     |
 |          |                                            | * the graphics XSLT *expects* the ../thumbnails folder for the graphics files to contain \<unique\_name\>.png and \<unique\_name\>\_s.png  |
 |          |                                            |                                                            |
 |   4      | Point the output at the result folder      | * Output metadata will be augmented with links to the graphics files  |
