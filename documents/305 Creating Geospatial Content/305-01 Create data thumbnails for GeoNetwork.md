@@ -5,7 +5,7 @@ This document describes how to create a large and small thumbnail for a metadata
 ImageMagick has huge image manipulation capability; this process just describes a basic resizing operation to generate thumbnails. ImageMagick can also improve a wide variety of source image deficiencies.
 
 | **Step** | **Major Activity**     | **References, Forms and Details**               |
-|----------|--------------------------------------------------------------------------|
+|----------|------------------------|-------------------------------------------------|
 |     1    | Download and install ImageMagick                        | http://www.imagemagick.org/script/download.php |
 |          |                                                         |                |
 |     2    | Use IMDisplay:                                          |                |
