@@ -2,7 +2,7 @@
 
 This document is a step-by-step guide explaining how to connect your atlas as a node in the International Coastal Web Atlas (ICWA) prototype hosted at [ican2.ucc.ie](http://ican2.ucc.ie)*/*. This document is aimed specifically at members of the International Coastal Atlas Network community and more generally at scientists, data managers, and system developers.
 
-| **Step** | **Major Activity**                         | **References, Forms and Details**          |         |-------------------------------------------------------|--------------------------------------------|
+| **Step** | **Major Activity**                         | **References, Forms and Details**          |         |----------|--------------------------------------------|--------------------------------------------|
 |     1    | Install a standards-compliant CSW (metadata server)        |                            |
 |     2    | Ensure the metadata with keywords is in one of four forms: |                            |
 |          |    1. uri only                             |  the label-only format (2) is common, but causes extra effort by the ontology-matching engine. |
