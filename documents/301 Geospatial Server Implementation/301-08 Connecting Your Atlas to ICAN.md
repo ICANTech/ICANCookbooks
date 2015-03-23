@@ -18,7 +18,7 @@ This document is a step-by-step guide explaining how to connect your atlas as a 
 |          |    * If you are using method 1, 2 or 3 for keyword encoding then you will need to provide the following information:  |     |
 |          |             a. URI of the Semantic Web Service (SWS) responsible for delivering your KOS  | Required if other than the NERC Vocabulary Server and the CMRC SWS is used |
 |          |             b. URI of the schema containing the concepts used as metadata keywords | Basically the thesaurus with definitions      |
-|     5    | ICAN administrator implements details      | Typical elapsed time is one month          |                                                        |
+|     5    | ICAN administrator implements details      | Typical elapsed time is one month          |
 |     6    | Connection after proviiding info to ICAN?  |                                            |                                                       
 |          | * If yes, then Done                        |                                            |                            
 |          | * If not, Make Changes                     |                                            |
