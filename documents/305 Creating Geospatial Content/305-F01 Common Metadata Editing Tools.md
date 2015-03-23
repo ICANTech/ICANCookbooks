@@ -1,6 +1,6 @@
-﻿**Metadata Editing Tools**
+﻿***Metadata Editing Tools***
 
-***Commonly used commercial metadata editing tools include: ***
+**Commonly used commercial metadata editing tools include: **
 
 1.  ESRI ArcGIS Desktop (*http://www.esri.com/*)
 
@@ -8,7 +8,7 @@
 
 3.  MapInfo Manager (*http://www.pbinsight.com/*)
 
-***Commonly used Open Source / Freeware metadata editing tools include: ***
+**Commonly used Open Source / Freeware metadata editing tools include: **
 
 1.  CatMDEdit (*http://catmdedit.sourceforge.net/*)
 
