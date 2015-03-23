@@ -14,6 +14,6 @@
 
 2.  GeoNetwork opensource (*http://geonetwork-opensource.org/*)
 
-3.  jNAP (Java metadata writer for NAP format)
+3.  jNAP (*http://www.bio.gc.ca/jmw2/index-eng.php/*)
 
 4.  M³Cat (*http://www.intelec.ca/*)
