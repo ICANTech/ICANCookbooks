@@ -3,6 +3,7 @@
 ### Process Number: 201-03 ###
 
 ### Purpose ###
+To allow Knowledge Organisation Systems defined in Process [201-02](https://github.com/ICANTech/ICANCookbooks/blob/master/documents/201-F05_Understanding_Semantics/201-02_DefiningTheContentOfAKnowledgeOrganisationSystem.md "201-02") to be published on the World Wide Wed for others to consume
 
 Step | Major Activity | References, Forms and Details
 -----|----------------|------------------------------
