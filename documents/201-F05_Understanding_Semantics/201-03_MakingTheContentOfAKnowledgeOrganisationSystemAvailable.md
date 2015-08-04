@@ -6,7 +6,6 @@
 
 Step | Major Activity | References, Forms and Details
 -----|----------------|------------------------------
-1 | | -
 
 ### Created by: ###
 Adam Leadbetter
