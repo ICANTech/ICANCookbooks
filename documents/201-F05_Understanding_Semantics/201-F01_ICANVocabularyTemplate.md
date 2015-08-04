@@ -2,7 +2,7 @@
 ## Concept names and definitions ##
 
 Concept Key | Concept Name and Title | Concept Alternative Name | Concept Definition
----------------|---------------------|--------------------|
+------------|------------------------|--------------------------|-------------------
 e.g. *74PQ* | e.g. *Plymouth Quest* | e.g. *PQ* | e.g. *{"title": "RV","callsign": "MEEU8", "platformClass": "research vessel", "commissioned": "2004-03-24","previous_name": "Sigurbjorg"} *
 
 ## Concept relationships ##
