@@ -13,9 +13,10 @@ The first worksheet, illustrated below, should contain columns for
 
 Concept Key | Concept Name and Title | Concept Alternative Name | Concept Definition
 ------------|------------------------|--------------------------|-------------------
-e.g. *74PQ* | e.g. *Plymouth Quest* | e.g. *PQ* | e.g. *{"title": "RV","callsign": "MEEU8", "platformClass": "research vessel", "commissioned": "2004-03-24","previous_name": "Sigurbjorg"} *
+e.g. *74PQ* | e.g. *Plymouth Quest* | e.g. *PQ* | e.g. *{"title": "RV","callsign": "MEEU8", "platformClass": "research vessel", "commissioned": "2004-03-24","previous_name": "Sigurbjorg"}*
 
 Each concept must only occupy one row of the worksheet. If the definition needs to carry some structured information (such as information regarding the identity of a ship’s hull or the bounding box of a geographic area), this should be encoded using an alternative to XML, such as the JavaScript Object Notation (JSON) standard, i.e. enclosed in curly brackets and formed of “key”:”value” pairs separated by commas. For example:
+
 `{"title": "RV", "callsign": "MEEU8", "platformClass": "research vessel", "commissioned": "2004-03-24","previous_name": "Sigurbjorg"}`
 
 ### Concept relationships ###
