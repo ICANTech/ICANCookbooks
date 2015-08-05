@@ -13,7 +13,7 @@ Catalogues of the SKOS concept collections and schemes hosted on the NVS can be 
 
 Once the identifier for an individual collections or schemes is known, it can then be accessed from:
 
-- http://vocab.nerc.ac.uk/collection/{}collection_id}/current/
+- http://vocab.nerc.ac.uk/collection/{collection_id}/current/
 	- e.g. http://vocab.nerc.ac.uk/collection/C17/current/ is the URL for the International Council for the Exploration of the Seas platform codes collection from which the example worksheets above were taken
 - http://vocab.nerc.ac.uk/scheme/{scheme_id}/current/
 	- e.g. http://vocab.nerc.ac.uk/scheme/ICANCOERO/current/ is the URL for the ICAN Coastal Erosion thesaurus

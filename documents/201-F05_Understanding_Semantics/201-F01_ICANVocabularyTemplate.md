@@ -20,13 +20,13 @@ e.g. *74PQ* | e.g. *Plymouth Quest* | e.g. *PQ* | e.g. *{"title": "RV","callsign
 Each concept must only occupy one row of the worksheet. If the definition needs to carry some structured information (such as information regarding the identity of a ship’s hull or the bounding box of a geographic area), this should be encoded using an alternative to XML, such as the JavaScript Object Notation (JSON) standard, i.e. enclosed in curly brackets and formed of “key”:”value” pairs separated by commas. For example:
 
 ```javascript
-{
-	"title": "RV", 
-	"callsign": "MEEU8", 
-	"platformClass": "research vessel", 
-	"commissioned": "2004-03-24",
-	"previous_name": "Sigurbjorg"
-}
+	{
+		"title": "RV", 
+		"callsign": "MEEU8", 
+		"platformClass": "research vessel", 
+		"commissioned": "2004-03-24",
+		"previous_name": "Sigurbjorg"
+	}
 ```
 
 ### Concept relationships ###
