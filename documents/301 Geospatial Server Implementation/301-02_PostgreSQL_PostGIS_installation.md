@@ -4,7 +4,7 @@
 
 ### Purpose
 
-To install on a suitable server the PostgreSQL database with the PostGIS spatial extension (for speedy response) on a Windows or Linux operating system.  PostGIS will be used to store geospatial metadata and data.
+To install on a suitable server the PostgreSQL database cluster with the PostGIS spatial extension (for speedy response for spatially-coded information) on a Windows or Linux operating system.  PostGIS will be used to store geospatial metadata in a database 'gndb4' (arbitrary name) and data in a separate database 'science' (another arbitrary name).  That is, if one is storing both metadata and data, one needs to create two databases.
 
 At the conclusion of the PostgreSQL/ PostGIS installation, the application will be installed as a service and be running whenever the computer and operating system is active.  That is, no need to start the application, ever.
 
