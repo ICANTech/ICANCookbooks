@@ -5,7 +5,7 @@
 ### Purpose
 
 To install GeoNetwork metadata application and the GeoServer data application on a suitable server. 
-Links can also established to an external database of choice, although the PostgreSQL database with the PostGIS extension is recommended.  If no external database is provided, GeoNetwork will establish an internal one
+Links can also established to an external database of choice, although the PostgreSQL database with the PostGIS extension is recommended.  If no external database is provided, GeoNetwork will establish an internal one.  
 GeoNetwork serves two functions: to store metadata, and optionally to store data as 'blobs' for download.
 The external database(s) also serve two functions: to store the metadata, and optionally to store data which is subsequently query-able on a feature basis and can be used to create GIS layers.
 Do *not* move the GeoServer data directory until instructed in a subsequent process.
