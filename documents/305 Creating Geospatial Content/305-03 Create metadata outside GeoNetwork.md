@@ -26,7 +26,7 @@ Some of the jNAP features are:
 
 | **Step** | **Major Activity**                                  | **References, Forms and Details**    |
 |----------|-----------------------------------------------------|--------------------------------------|
-|   1      | Download (if necessary) and open jNAP               | <http://www.bio.gc.ca/jmw2/index-eng.php>   |
+|   1      | Download (if necessary) and open jNAP               | <http://www.bio.gc.ca/jmw2/index-en.php>   |
 |          |                                                     |                                 |
 |   2      | Complete the red and starred fields in:             |  * The Reference system section becomes available when one chooses “edit-preference-expert”  |
 |          |    * Metadata Record Information                                                 
