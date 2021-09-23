@@ -1,0 +1,2 @@
+DOIs are becoming sa necessary addition to a metadata record.  GeoNetwork supports this addition very well.
+A digital object identifier is a persistent identifier or handle used to identify objects uniquely, standardized by the International Organization for Standardization. An implementation of the Handle System, DOIs are in wide use mainly to identify academic, professional, and government information, such as journal articles, research reports, data sets, and official publications.Wikipedia.
