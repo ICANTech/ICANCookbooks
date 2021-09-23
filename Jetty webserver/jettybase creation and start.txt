@@ -1,0 +1,292 @@
+[sogadmin1@soggy2 opt]$ cd jettybase/
+[sogadmin1@soggy2 jettybase]$ java -jar $JETTY_HOME/start.jar --create-startd
+MKDIR : ${jetty.base}/start.d
+INFO  : Base directory was modified
+[sogadmin1@soggy2 jettybase]$ ls -l
+total 0
+drwxrwxr-x. 2 sogadmin1 sogadmin1 6 Jan 21 12:25 start.d
+[sogadmin1@soggy2 jettybase]$ java -jar $JETTY_HOME/start.jar --add-to-start=deploy,http,plus
+INFO  : webapp          transitively enabled, ini template available with --add-to-start=webapp
+INFO  : server          transitively enabled, ini template available with --add-to-start=server
+INFO  : security        transitively enabled
+INFO  : mail            transitively enabled
+INFO  : servlet         transitively enabled
+INFO  : jndi            transitively enabled
+INFO  : http            initialized in ${jetty.base}/start.d/http.ini
+INFO  : transactions    transitively enabled
+INFO  : threadpool      transitively enabled, ini template available with --add-to-start=threadpool
+INFO  : bytebufferpool  transitively enabled, ini template available with --add-to-start=bytebufferpool
+INFO  : plus            initialized in ${jetty.base}/start.d/plus.ini
+INFO  : deploy          initialized in ${jetty.base}/start.d/deploy.ini
+MKDIR : ${jetty.base}/webapps
+INFO  : Base directory was modified
+[sogadmin1@soggy2 jettybase]$ ls -l
+total 0
+drwxrwxr-x. 2 sogadmin1 sogadmin1 56 Jan 21 12:27 start.d
+drwxrwxr-x. 2 sogadmin1 sogadmin1  6 Jan 21 12:27 webapps
+[sogadmin1@soggy2 jettybase]$ cd webapps/
+[sogadmin1@soggy2 webapps]$ unzip ~/gs/geoserver-2.18.2-war.zip
+Archive:  /home/sogadmin1/gs/geoserver-2.18.2-war.zip
+   creating: target/
+   creating: license/
+  inflating: geoserver.war
+  inflating: target/VERSION.txt
+  inflating: README.txt
+  inflating: NOTICE.md
+  inflating: license/epl-1.0.txt
+  inflating: license/GPL.md
+  inflating: license/apache-1.1.txt
+  inflating: license/LGPL.md
+  inflating: license/apache-2.0.txt
+[sogadmin1@soggy2 webapps]$ ls -l
+total 101924
+-rw-r--r--. 1 sogadmin1 sogadmin1 104279971 Jan 18 15:49 geoserver.war
+drwxr-xr-x. 2 sogadmin1 sogadmin1        98 Jan 18 15:57 license
+-rw-r--r--. 1 sogadmin1 sogadmin1     85824 Sep  2 05:49 NOTICE.md
+-rw-r--r--. 1 sogadmin1 sogadmin1       423 May 19  2020 README.txt
+drwxr-xr-x. 2 sogadmin1 sogadmin1        25 Jan 18 15:57 target
+[sogadmin1@soggy2 webapps]$ cd ..
+[sogadmin1@soggy2 jettybase]$ java -jar $JETTY_HOME/start.jar --list-config
+
+Java Environment:
+-----------------
+ java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.275.b01-1.el8_3.x86_64/jre (null)
+ java.vm.vendor = Red Hat, Inc. (null)
+ java.vm.version = 25.275-b01 (null)
+ java.vm.name = OpenJDK 64-Bit Server VM (null)
+ java.vm.info = mixed mode (null)
+ java.runtime.name = OpenJDK Runtime Environment (null)
+ java.runtime.version = 1.8.0_275-b01 (null)
+ java.io.tmpdir = /tmp (null)
+ user.dir = /opt/jettybase (null)
+ user.language = en (null)
+ user.country = CA (null)
+
+Jetty Environment:
+-----------------
+ jetty.version = 9.4.36.v20210114
+ jetty.tag.version = master
+ jetty.home = /usr/share/java/jetty-distribution-9.4.36.v20210114
+ jetty.base = /opt/jettybase
+
+Config Search Order:
+--------------------
+ <command-line>
+ ${jetty.base} -> /opt/jettybase
+ ${jetty.home} -> /usr/share/java/jetty-distribution-9.4.36.v20210114
+
+
+JVM Arguments:
+--------------
+ (no jvm args specified)
+
+System Properties:
+------------------
+ (no system properties specified)
+
+Properties:
+-----------
+ java.version = 1.8.0_275
+ java.version.major = 1
+ java.version.micro = 0
+ java.version.minor = 8
+ java.version.platform = 8
+ jetty.base = /opt/jettybase
+ jetty.base.uri = file:///opt/jettybase
+ jetty.home = /usr/share/java/jetty-distribution-9.4.36.v20210114
+ jetty.home.uri = file:///usr/share/java/jetty-distribution-9.4.36.v20210114
+
+Jetty Server Classpath:
+-----------------------
+Version Information on 15 entries in the classpath.
+Note: order presented here is how they would appear on the classpath.
+      changes to the --module=name command line options will be reflected here.
+ 0:                    3.1.0 | ${jetty.home}/lib/servlet-api-3.1.jar
+ 1:                 3.1.0.M0 | ${jetty.home}/lib/jetty-schemas-3.1.jar
+ 2:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-http-9.4.36.v20210114.jar
+ 3:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-server-9.4.36.v20210114.jar
+ 4:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-xml-9.4.36.v20210114.jar
+ 5:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-util-9.4.36.v20210114.jar
+ 6:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-io-9.4.36.v20210114.jar
+ 7:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-security-9.4.36.v20210114.jar
+ 8:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-servlet-9.4.36.v20210114.jar
+ 9:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-webapp-9.4.36.v20210114.jar
+10:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-deploy-9.4.36.v20210114.jar
+11:      1.4.1.v201005082020 | ${jetty.home}/lib/mail/javax.mail.glassfish-1.4.1.v201005082020.jar
+12:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-jndi-9.4.36.v20210114.jar
+13:                      1.3 | ${jetty.home}/lib/transactions/javax.transaction-api-1.3.jar
+14:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-plus-9.4.36.v20210114.jar
+
+Jetty Active XMLs:
+------------------
+ ${jetty.home}/etc/jetty-bytebufferpool.xml
+ ${jetty.home}/etc/jetty-threadpool.xml
+ ${jetty.home}/etc/jetty.xml
+ ${jetty.home}/etc/jetty-webapp.xml
+ ${jetty.home}/etc/jetty-deploy.xml
+ ${jetty.home}/etc/jetty-http.xml
+ ${jetty.home}/etc/jetty-plus.xml
+[sogadmin1@soggy2 jettybase]$ java -jar $JETTY_HOME/start.jar
+2021-01-21 12:30:33.020:INFO::main: Logging initialized @616ms to org.eclipse.jetty.util.log.StdErrLog
+2021-01-21 12:30:33.330:INFO:oejs.Server:main: jetty-9.4.36.v20210114; built: 2021-01-14T16:44:28.689Z; git: 238ec6997c7806b055319a6d11f8ae7564adc0de; jvm 1.8.0_275-b01
+2021-01-21 12:30:33.362:INFO:oejdp.ScanningAppProvider:main: Deployment monitor [file:///opt/jettybase/webapps/] at interval 1
+2021-01-21 12:30:33.530:INFO:oejw.StandardDescriptorProcessor:main: NO JSP Support for /license, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-21 12:30:33.548:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2021-01-21 12:30:33.548:INFO:oejs.session:main: No SessionScavenger set, using defaults
+2021-01-21 12:30:33.549:INFO:oejs.session:main: node0 Scavenging every 660000ms
+2021-01-21 12:30:33.583:INFO:oejsh.ContextHandler:main: Started o.e.j.w.WebAppContext@396f6598{license,/license,file:///opt/jettybase/webapps/license/,AVAILABLE}{/opt/jettybase/webapps/license}
+2021-01-21 12:30:34.373:INFO:oejw.StandardDescriptorProcessor:main: NO JSP Support for /geoserver, did not find org.eclipse.jetty.jsp.JettyJspServlet
+21 Jan 12:30:35 INFO [geoserver.platform] - Falling back to embedded data directory: /tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data
+Jan 21, 2021 12:30:35 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+Jan 21, 2021 12:30:35 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+Jan 21, 2021 12:30:35 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+Jan 21, 2021 12:30:35 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+21 Jan 12:30:35 WARN [geoserver.logging] - log4jConfigFile 'DEFAULT_LOGGING.properties' couldn't be found in the data dir, so GeoServer will install the various logging config file into the data dir, and then try to find it again.
+log4j:WARN File option not set for appender [geoserverlogfile].
+log4j:WARN Are you using FileAppender instead of ConsoleAppender?
+2021-01-21 12:30:36.006:INFO:oejshC.geoserver:main: Initializing Spring root WebApplicationContext
+21 Jan 12:30:38 INFO [geoserver.platform] - Falling back to embedded data directory: /tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data
+21 Jan 12:30:38 INFO [geoserver.platform] - Falling back to embedded data directory: /tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data
+Jan 21, 2021 12:30:38 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+Jan 21, 2021 12:30:38 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+Jan 21, 2021 12:30:38 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+Jan 21, 2021 12:30:38 PM org.geoserver.platform.GeoServerExtensions checkContext
+WARNING: Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+21 Jan 12:30:39 INFO [org.geoserver] - GeoServer configuration lock is enabled
+21 Jan 12:30:39 INFO [org.geoserver] - Loading catalog...
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'line'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'restricted'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'dem'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'green'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'capitals'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'pophatch'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'poi'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'giant_polygon'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'grass'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'cite_lakes'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'simple_streams'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'point'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'simple_roads'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'rain'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'generic'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'population'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'tiger_roads'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'burg'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'polygon'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'raster'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded style 'poly_landmarks'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded default workspace cite
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'it.geosolutions'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'cite'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'topp'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'sde'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'tiger'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'nurc'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded workspace 'sf'
+21 Jan 12:30:39 INFO [org.geoserver] - Loaded data store 'taz_shapes', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'tasmania_cities', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'tasmania_cities'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'tasmania_water_bodies', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'tasmania_water_bodies'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'tasmania_roads', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'tasmania_roads'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'tasmania_state_boundaries', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'tasmania_state_boundaries'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded data store 'states_shapefile', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'states', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'states'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded data store 'nyc', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'poly_landmarks', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'poly_landmarks'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'giant_polygon', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'giant_polygon'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'tiger_roads', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'tiger_roads'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'poi', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'poi'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage store 'worldImageSample', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage 'Img_Sample', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'Img_Sample'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage store 'arcGridSample', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage 'Arc_Sample', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'Arc_Sample'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage store 'img_sample2', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage 'Pk50095', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'Pk50095'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage store 'mosaic', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage 'mosaic', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'mosaic'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage store 'sfdem', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded coverage 'sfdem', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'sfdem'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded data store 'sf', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'restricted', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'restricted'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'bugsites', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'bugsites'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'streams', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'streams'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'archsites', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'archsites'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded feature type 'roads', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer 'roads'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer group 'spearfish'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer group 'tiger-ny'
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded layer group 'tasmania'
+21 Jan 12:30:41 INFO [org.geoserver] - Read catalog in 2.219 s
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded service 'WMTSInfoImpl-430bcf50:17726a45b70:-8000', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded service 'wcs', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded service 'wfs', enabled
+21 Jan 12:30:41 INFO [org.geoserver] - Loaded service 'wms', enabled
+21 Jan 12:30:41 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache.xml' in directory '/tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data/gwc'.
+21 Jan 12:30:41 WARN [config.GeoserverXMLResourceProvider] - Found no configuration file in config directory, will create one at 'gwc/geowebcache.xml' from template jar:file:/tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/WEB-INF/lib/gwc-core-1.18.2.jar!/geowebcache_empty.xml
+21 Jan 12:30:41 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+21 Jan 12:30:41 INFO [config.GeoserverXMLResourceProvider] - Found configuration file in gwc
+21 Jan 12:30:41 WARN [config.XMLConfiguration] - ********************************************************************************
+21 Jan 12:30:41 WARN [config.XMLConfiguration] - *** GWC configuration validation error: cvc-elt.1: Cannot find the declaration of element 'gwcConfiguration'.
+21 Jan 12:30:41 WARN [config.XMLConfiguration] - *** Will try to use configuration anyway. Please check the order of declared elements against the schema.
+21 Jan 12:30:41 WARN [config.XMLConfiguration] - ********************************************************************************
+21 Jan 12:30:41 INFO [config.XMLConfiguration] - Initializing GridSets from gwc
+21 Jan 12:30:41 INFO [config.XMLConfiguration] - Initializing layers from gwc
+21 Jan 12:30:41 INFO [gwc.layer] - Initializing GWC configuration based on GeoServer's Catalog
+21 Jan 12:30:41 INFO [gwc.layer] - GeoServer TileLayer store base directory is: gwc-layers
+21 Jan 12:30:41 INFO [gwc.layer] - Loading tile layers from gwc-layers
+21 Jan 12:30:41 INFO [gwc.layer] - Loaded 0 tile layers in 14.88 ms
+21 Jan 12:30:41 INFO [storage.BlobStoreAggregator] - BlobStoreConfiguration gwc contained no blob store infos.
+21 Jan 12:30:41 INFO [storage.DefaultStorageFinder] - ***************************************************************************************
+21 Jan 12:30:41 INFO [storage.DefaultStorageFinder] - *** Reverting to java.io.tmpdir null for storage. Please set GEOWEBCACHE_CACHE_DIR. ***
+21 Jan 12:30:41 INFO [storage.DefaultStorageFinder] - ***************************************************************************************
+21 Jan 12:30:41 INFO [gwc.config] - Initializing GeoServer specific GWC configuration from gwc-gs.xml
+21 Jan 12:30:43 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota.xml' in directory '/tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data/gwc'.
+21 Jan 12:30:43 INFO [config.GeoserverXMLResourceProvider] - Will look for 'geowebcache-diskquota-jdbc.xml' in directory '/tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data/gwc'.
+21 Jan 12:30:43 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+21 Jan 12:30:43 INFO [diskquota.ConfigLoader] - DiskQuota configuration is not readable: gwc/geowebcache-diskquota.xml
+21 Jan 12:30:43 INFO [diskquota.DiskQuotaMonitor] - Setting up disk quota periodic enforcement task
+21 Jan 12:30:43 INFO [diskquota.DiskQuotaMonitor] - 0 layers configured with their own quotas.
+21 Jan 12:30:43 INFO [diskquota.DiskQuotaMonitor] - 22 layers attached to global quota 500.0 MB
+21 Jan 12:30:43 INFO [diskquota.DiskQuotaMonitor] - Disk quota periodic enforcement task set up every 10 SECONDS
+21 Jan 12:30:43 INFO [geowebcache.GeoWebCacheDispatcher] - Invoked setServletPrefix(gwc)
+21 Jan 12:30:43 INFO [georss.GeoRSSPoller] - Initializing GeoRSS poller in a background job...
+21 Jan 12:30:43 INFO [georss.GeoRSSPoller] - No enabled GeoRSS feeds found, poller will not run.
+21 Jan 12:30:43 INFO [wms.WMSService] - Will NOT recombine tiles for non-tiling clients.
+21 Jan 12:30:43 INFO [wms.WMSService] - Will proxy requests to backend that are not getmap or getcapabilities.
+21 Jan 12:30:44 INFO [geoserver.platform] - Falling back to embedded data directory: /tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data
+21 Jan 12:30:44 INFO [geoserver.config] - Initiated CatalogTimeStampUpdater
+21 Jan 12:30:45 WARN [gce.imagemosaic] - Unable to set ordering between tiff readers spi
+21 Jan 12:30:46 INFO [platform.resource] - Notifying ENTRY_CREATE change on /tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/data/gwc-layers. Created: 22, removed: 0, modified: 0
+21 Jan 12:30:48 INFO [geoserver.security] - AuthenticationCache Initialized with 1000 Max Entries, 300 seconds idle time, 600 seconds time to live and 3 concurrency level
+21 Jan 12:30:48 INFO [geoserver.security] - AuthenticationCache Eviction Task created to run every 600 seconds
+21 Jan 12:30:48 INFO [geoserver.security] - Start reloading user/groups for service named default
+21 Jan 12:30:48 INFO [geoserver.security] - Reloading user/groups successful for service named default
+2021-01-21 12:30:48.770:INFO:oejsh.ContextHandler:main: Started o.e.j.w.WebAppContext@50de0926{GeoServer,/geoserver,file:///tmp/jetty-0_0_0_0-8080-geoserver_war-_geoserver-any-6426419878154120696/webapp/,AVAILABLE}{/opt/jettybase/webapps/geoserver.war}
+2021-01-21 12:30:48.778:INFO:oejw.StandardDescriptorProcessor:main: NO JSP Support for /target, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-01-21 12:30:48.779:INFO:oejsh.ContextHandler:main: Started o.e.j.w.WebAppContext@6f45a2fd{target,/target,file:///opt/jettybase/webapps/target/,AVAILABLE}{/opt/jettybase/webapps/target}
+2021-01-21 12:30:48.857:INFO:oejs.AbstractConnector:main: Started ServerConnector@5c815478{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+2021-01-21 12:30:48.860:INFO:oejs.Server:main: Started @16456ms
