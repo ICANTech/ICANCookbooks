@@ -1,1 +1,0 @@
-Documentation to install the Jetty webserver, which is the swebserver used in this system.  Jetty was chosen as the webserver based upon cursory performance tests, where it appeared to perfom slightly faster than the more common Apache Tomcat webserver.  For completeness, the common Apache Tomcat documentation is included.
