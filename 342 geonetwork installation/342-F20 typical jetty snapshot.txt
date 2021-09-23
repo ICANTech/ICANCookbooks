@@ -1,0 +1,132 @@
+[sogadmin1@soggy2 jetty]$ systemctl status jetty
+● jetty.service - Jetty
+   Loaded: loaded (/etc/systemd/system/jetty.service; enabled; vendor preset: disabled)
+   Active: active (running) since Tue 2021-03-09 14:17:02 PST; 37s ago
+  Process: 3139 ExecStop=/bin/kill ${MAINPID} (code=exited, status=0/SUCCESS)
+ Main PID: 3148 (java)
+    Tasks: 57 (limit: 23540)
+   Memory: 664.6M
+   CGroup: /system.slice/jetty.service
+           ├─3148 /bin/java -Xms2g -Xmx2g -Djava.awt.headless=true -Djava.io.tmpdir=/var/www/jetty/temp -Dmime-mappings=/var/www/jetty/webapps/geonetwork/WEB-INF/mime-typ>
+           └─3162 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/bin/java -Djava.io.tmpdir=/var/www/jetty/temp -Djetty.home=/usr/share/java/jetty-distri>
+
+Mar 09 14:17:04 soggy2 java[3148]: 2021-03-09 14:17:04 INFO  session:132 - node0 Scavenging every 660000ms
+Mar 09 14:17:04 soggy2 java[3148]: 2021-03-09 14:17:04 INFO  ContextHandler:916 - Started o.e.j.w.WebAppContext@2bbf4b8b{license,/license,file:///var/www/jetty/webapps/li>
+Mar 09 14:17:04 soggy2 java[3148]: 2021-03-09 14:17:04 INFO  AnnotationConfiguration:473 - Scanning elapsed time=9ms
+Mar 09 14:17:04 soggy2 java[3148]: 2021-03-09 14:17:04 INFO  ContextHandler:916 - Started o.e.j.w.WebAppContext@78dd667e{ROOT,/,file:///var/www/jetty/webapps/ROOT/,AVAILA>
+Mar 09 14:17:07 soggy2 java[3148]: 2021-03-09 14:17:07 INFO  geoserver:2363 - Initializing Spring root WebApplicationContext
+Mar 09 14:17:20 soggy2 java[3148]: 2021-03-09 14:17:20 INFO  ContextHandler:916 - Started o.e.j.w.WebAppContext@7995092a{GeoServer,/geoserver,file:///var/www/jetty/webapp>
+Mar 09 14:17:20 soggy2 java[3148]: 2021-03-09 14:17:20 INFO  AbstractConnector:331 - Started ServerConnector@156b31d{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+Mar 09 14:17:20 soggy2 java[3148]: 2021-03-09 14:17:20 INFO  SslContextFactory:357 - x509=X509@59ac94ad(soggy2.zoology.ubc.ca,h=[soggy2.zoology.ubc.ca, www.soggy2.zoology>
+Mar 09 14:17:20 soggy2 java[3148]: 2021-03-09 14:17:20 INFO  AbstractConnector:331 - Started ServerConnector@55fb9e52{SSL, (ssl, http/1.1)}{0.0.0.0:8443}
+Mar 09 14:17:20 soggy2 java[3148]: 2021-03-09 14:17:20 INFO  Server:415 - Started @16857ms
+[sogadmin1@soggy2 jetty]$ java -jar $JETTY_HOME/start.jar --list-config
+
+Java Environment:
+-----------------
+ java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre (null)
+ java.vm.vendor = Red Hat, Inc. (null)
+ java.vm.version = 25.282-b08 (null)
+ java.vm.name = OpenJDK 64-Bit Server VM (null)
+ java.vm.info = mixed mode (null)
+ java.runtime.name = OpenJDK Runtime Environment (null)
+ java.runtime.version = 1.8.0_282-b08 (null)
+ java.io.tmpdir = /tmp (null)
+ user.dir = /var/www/jetty (null)
+ user.language = en (null)
+ user.country = CA (null)
+
+Jetty Environment:
+-----------------
+ jetty.version = 9.4.36.v20210114
+ jetty.tag.version = master
+ jetty.home = /usr/share/java/jetty-distribution-9.4.36.v20210114
+ jetty.base = /var/www/jetty
+
+Config Search Order:
+--------------------
+ <command-line>
+ ${jetty.base} -> /var/www/jetty
+ ${jetty.home} -> /usr/share/java/jetty-distribution-9.4.36.v20210114
+
+
+JVM Arguments:
+--------------
+ -Dorg.eclipse.jetty.util.log.class?=org.eclipse.jetty.util.log.Slf4jLog
+
+System Properties:
+------------------
+ (no system properties specified)
+
+Properties:
+-----------
+ java.version = 1.8.0_282
+ java.version.major = 1
+ java.version.micro = 0
+ java.version.minor = 8
+ java.version.platform = 8
+ jetty.base = /var/www/jetty
+ jetty.base.uri = file:///var/www/jetty
+ jetty.console-capture.dir = /var/www/jetty/logs
+ jetty.home = /usr/share/java/jetty-distribution-9.4.36.v20210114
+ jetty.home.uri = file:///usr/share/java/jetty-distribution-9.4.36.v20210114
+ jetty.sslContext.keyManagerPassword = kBAYk/n9FJKubp3MdXHX4qQJP/EgjA732RMNdD3vUmavGu2M
+ jetty.sslContext.keyStorePassword = kBAYk/n9FJKubp3MdXHX4qQJP/EgjA732RMNdD3vUmavGu2M
+ jetty.sslContext.keyStoreType = PKCS12
+ jetty.sslContext.trustStoreType = pkcs12
+ jetty.sslContext.truststorePassword = kBAYk/n9FJKubp3MdXHX4qQJP/EgjA732RMNdD3vUmavGu2M
+ jetty.webapp.addServerClasses = ${jetty.base.uri}/lib/slf4j/,${jetty.base.uri}/lib/log4j/
+ log4j.version = 1.2.17
+ slf4j.version = 1.7.30
+
+Jetty Server Classpath:
+-----------------------
+Version Information on 29 entries in the classpath.
+Note: order presented here is how they would appear on the classpath.
+      changes to the --module=name command line options will be reflected here.
+ 0:      1.4.1.v201005082020 | ${jetty.home}/lib/mail/javax.mail.glassfish-1.4.1.v201005082020.jar
+ 1:                    (dir) | ${jetty.base}/resources
+ 2:                   1.2.17 | ${jetty.base}/lib/log4j/log4j-1.2.17.jar
+ 3:                   1.7.30 | ${jetty.base}/lib/slf4j/slf4j-api-1.7.30.jar
+ 4:                   1.7.30 | ${jetty.base}/lib/slf4j/slf4j-log4j12-1.7.30.jar
+ 5:                    3.1.0 | ${jetty.home}/lib/servlet-api-3.1.jar
+ 6:                 3.1.0.M0 | ${jetty.home}/lib/jetty-schemas-3.1.jar
+ 7:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-http-9.4.36.v20210114.jar
+ 8:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-server-9.4.36.v20210114.jar
+ 9:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-xml-9.4.36.v20210114.jar
+10:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-util-9.4.36.v20210114.jar
+11:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-io-9.4.36.v20210114.jar
+12:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-jndi-9.4.36.v20210114.jar
+13:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-security-9.4.36.v20210114.jar
+14:                      1.3 | ${jetty.home}/lib/transactions/javax.transaction-api-1.3.jar
+15:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-servlet-9.4.36.v20210114.jar
+16:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-webapp-9.4.36.v20210114.jar
+17:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-plus-9.4.36.v20210114.jar
+18:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-annotations-9.4.36.v20210114.jar
+19:                      9.0 | ${jetty.home}/lib/annotations/asm-9.0.jar
+20:                      9.0 | ${jetty.home}/lib/annotations/asm-analysis-9.0.jar
+21:                      9.0 | ${jetty.home}/lib/annotations/asm-commons-9.0.jar
+22:                      9.0 | ${jetty.home}/lib/annotations/asm-tree-9.0.jar
+23:                    1.3.2 | ${jetty.home}/lib/annotations/javax.annotation-api-1.3.2.jar
+24:    3.19.0.v20190903-0936 | ${jetty.home}/lib/apache-jsp/org.eclipse.jdt.ecj-3.19.0.jar
+25:         9.4.36.v20210114 | ${jetty.home}/lib/apache-jsp/org.eclipse.jetty.apache-jsp-9.4.36.v20210114.jar
+26:                   8.5.54 | ${jetty.home}/lib/apache-jsp/org.mortbay.jasper.apache-el-8.5.54.jar
+27:                   8.5.54 | ${jetty.home}/lib/apache-jsp/org.mortbay.jasper.apache-jsp-8.5.54.jar
+28:         9.4.36.v20210114 | ${jetty.home}/lib/jetty-deploy-9.4.36.v20210114.jar
+
+Jetty Active XMLs:
+------------------
+ ${jetty.home}/etc/jetty-bytebufferpool.xml
+ ${jetty.home}/etc/jetty-threadpool.xml
+ ${jetty.home}/etc/jetty.xml
+ ${jetty.home}/etc/jetty-webapp.xml
+ ${jetty.home}/etc/jetty-plus.xml
+ ${jetty.home}/etc/jetty-annotations.xml
+ ${jetty.home}/etc/console-capture.xml
+ ${jetty.home}/etc/jetty-deploy.xml
+ ${jetty.home}/etc/jetty-http.xml
+ ${jetty.home}/etc/jetty-ssl.xml
+ ${jetty.home}/etc/jetty-ssl-context.xml
+ ${jetty.home}/etc/jetty-https.xml
+[sogadmin1@soggy2 jetty]$ 
+

@@ -1,0 +1,64 @@
+                340-F65 Geonetwork and Geoserver configuration files
+
+
+[sogadmin1@soggy2 ~]$ cat ./.bashrc
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+export PGUSER=postgres
+export PGPORT=5432
+export PGHOST=localhost
+
+export JETTY_HOME=/usr/share/java/jetty-distribution-9.4.36.v20210114
+export JETTY_BASE=/var/www/jetty
+
+=================
+[sogadmin1@soggy2 ~]$ cat /etc/profile.d/geo_stuff.sh 
+export GEOWEBCACHE_CACHE_DIR=/data/gwc
+export GEOSERVER_DATA_DIR=/data/gs_dir
+
+export GEONETWORK_DB_USERNAME='geonetwork'
+export GEONETWORK_DB_PASSWORD='T3rr3nc3%'
+export GEONETWORK_DB_NAME='gndb3dot10'
+export GEONETWORK_DB_host='localhost'
+export GEONETWORK_DB_PORT='5432'
+
+export geonetwork_dir=/data/gn_dir2
+
+=================
+[sogadmin1@soggy2 ~]$ cat /etc/systemd/system/jetty.service 
+[Unit]
+Description=Jetty
+After=network-online.target
+
+[Service]
+Type=simple
+User=jetty
+Group=jetty
+ExecStart= /bin/java -Xms2g -Xmx2g -Djava.awt.headless=true -Djava.io.tmpdir=/var/www/jetty/temp \
+          -Dlog_dir=/var/www/jetty/ -DSTOP.PORT=8079 -DSTOP.KEY=geonetwork \
+          -Dmime-mappings=/var/www/jetty/webapps/geonetwork/WEB-INF/mime-types.properties \
+          -jar /usr/share/java/jetty-distribution-9.4.36.v20210114/start.jar jetty.base=/var/www/jetty
+ExecStop=/bin/kill ${MAINPID}
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+[sogadmin1@soggy2 ~]$ 
+
+
