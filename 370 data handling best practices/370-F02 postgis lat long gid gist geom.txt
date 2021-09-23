@@ -1,0 +1,50 @@
+                                                                                                            340-F02
+ PostGIS: using latitude and longitude to create geometry
+In this post I will show how to load the content of a CSV file into PostgreSQL/PostGIS 2.0. And how to use the coordinate information in this file to create point objects.
+
+The file used in this exercise - NL_Airports.csv - can be downloaded from this location.
+
+First, let's create an empty table  in PostgreSQL/PostGIS. Please make sure the order of the columns is the same as in the file you are importing. (Open the CSV file in your favorite text editor to check.)
+
+DROP TABLE IF EXISTS netherlands.airports;
+CREATE TABLE netherlands.airports (airport varchar(35), iata varchar(3), latitude float, longitude float);
+
+(You can use pgAdmin III to check the presence of the table.)
+
+Now you want to copy the content of your CSV file to this table. You are not logged in to the gis database as superuser (are you?), so you will not be able to use the COPY command. Instead you will use psql's \copy command.
+
+Before importing the data: please make sure to remove the first line - the line containing the column titles - from your CSV file.
+
+Next, open your SQL Shell (psql) and login to your gis database and execute the following command:
+\copy netherlands.airports FROM 'C:\Input\NL_Airports.csv' WITH DELIMITER ',';
+
+OK - now the information about the airports is stored in the database, but of course the ultimate goal is to see these airports on the map. You have got a few more steps to take.
+
+Let's add a numerical column which will be populated automatically and which can serve as primary key:
+ALTER TABLE netherlands.airports ADD COLUMN gid serial PRIMARY KEY;
+
+The latitude/longitude (or: coordinate) information in the table is given in WGS84, so let's create a geometry column using the SRID 4326 (using PostGIS 2.0 syntax):\d stp
+ALTER TABLE netherlands.airports ADD COLUMN geom geometry(POINT,4326);
+
+Update the geometry column:
+UPDATE netherlands.airports SET geom = ST_SetSRID(ST_MakePoint(longitude,latitude),4326);
+
+And create a spatial index:
+CREATE INDEX idx_airports_geom ON netherlands.airports USING GIST(geom);
+
+Now it should be possible to see the airports on the map.
+
+CREATE TABLE missions(
+mission varchar(15), 
+project varchar, 
+pi varchar, 
+latitude float, 
+longitude float, 
+datetime timestamptz,
+extract(year from datetime) AS year, 
+gid serial PRIMARY KEY
+);
+
+
+/ Copy shp file to database table (doesnt work)
+/     /usr/pgsql-9.3/bin/shp2pgsql -I -s 26910 ./HWL_Line_PacificCoast.shp data.hwl | psql -d chs
